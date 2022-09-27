@@ -1,0 +1,773 @@
+{
+  "id": "fd1d1e63-1eae-41dc-a681-71594110c326",
+  "version": "2.0",
+  "name": "ecobar.by",
+  "url": "https://ecobar.by/",
+  "tests": [{
+    "id": "7a5e62ae-0f47-403a-bbd8-cc85f6e98f41",
+    "name": "Валидный логин",
+    "commands": [{
+      "id": "d9323ec4-dd31-4b0d-b6a5-c174efdd5063",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecobar.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d87b05b4-a123-4c40-a6d4-7b8b8ffc2bcf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0efc8b3-91dd-43cd-b6c8-c6eeafd46319",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions:nth-child(3) .actions-list-item:nth-child(2) svg",
+      "targets": [
+        ["css=.header-actions:nth-child(3) .actions-list-item:nth-child(2) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "edd1edc0-e179-4b51-a32c-5a41122c3584",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Вход по паролю')]",
+      "targets": [
+        ["css=.loginOption:nth-child(2) > .login-option-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вход по паролю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "090f216b-5dec-4c9b-9647-2e6cef0fa47f",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e5eeb9-9c1d-4478-86af-7d4e3cec51e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Eleven11@demo.gorgon"
+    }, {
+      "id": "ff5a14ab-e754-4023-b16f-5ffa3b55cb52",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d1a72be-c92d-450e-96bf-7f96c9ff8960",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Qwerty12345"
+    }, {
+      "id": "f8f9f9df-d1b5-4a4a-b526-4a19aa186b6b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Войти')]",
+      "targets": [
+        ["css=.send-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "536fb144-a85c-4194-ba06-e6d8c5e6f47d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//legend[contains(.,'Личные данные')]",
+      "targets": [
+        ["css=legend", "css:finder"],
+        ["xpath=//form[@id='form_maininfo']/div/legend", "xpath:idRelative"],
+        ["xpath=//legend", "xpath:position"],
+        ["xpath=//legend[contains(.,'Личные данные')]", "xpath:innerText"]
+      ],
+      "value": "Личные данные"
+    }, {
+      "id": "d5d2709d-df24-45b5-8f3f-dbc12a051391",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[contains(.,'Мой профиль')]",
+      "targets": [],
+      "value": "Мой профиль"
+    }, {
+      "id": "f50d6111-f556-4313-a13b-d3555d3c9e98",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1) .menu_item",
+      "targets": [
+        ["css=li:nth-child(1) .menu_item", "css:finder"],
+        ["xpath=//div[@id='account-menu']/nav/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Избранные товары')]", "xpath:innerText"]
+      ],
+      "value": "Избранные товары"
+    }, {
+      "id": "827ff596-b745-49f4-87c9-e1d9c8bc2bf6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2) .menu_item",
+      "targets": [
+        ["css=li:nth-child(2) .menu_item", "css:finder"],
+        ["xpath=//div[@id='account-menu']/nav/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Бонусная программа')]", "xpath:innerText"]
+      ],
+      "value": "Бонусная программа"
+    }, {
+      "id": "bd5374db-4cca-4fca-889b-2578a047e31c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3) .menu_item",
+      "targets": [
+        ["css=li:nth-child(3) .menu_item", "css:finder"],
+        ["xpath=//div[@id='account-menu']/nav/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'История покупок')]", "xpath:innerText"]
+      ],
+      "value": "История покупок"
+    }, {
+      "id": "0da864a2-d928-4a9c-b317-eb7633fe3f41",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(5) .menu_item",
+      "targets": [
+        ["css=li:nth-child(5) .menu_item", "css:finder"],
+        ["xpath=//div[@id='account-menu']/nav/ul/li[5]/a/span", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Изменить пароль')]", "xpath:innerText"]
+      ],
+      "value": "Изменить пароль"
+    }, {
+      "id": "4722a5eb-ff48-4ee0-8d46-08f1871f6019",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(6) .menu_item",
+      "targets": [
+        ["css=li:nth-child(6) .menu_item", "css:finder"],
+        ["xpath=//div[@id='account-menu']/nav/ul/li[6]/a/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Выход')]", "xpath:innerText"]
+      ],
+      "value": "Выход"
+    }, {
+      "id": "93dc8a65-7b91-456d-ad35-004ef491bed4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выход",
+      "targets": [
+        ["linkText=Выход", "linkText"],
+        ["css=li:nth-child(6) > .menu_li", "css:finder"],
+        ["xpath=//div[@id='account-menu']/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4506fc94-93b0-40f4-b52f-8f897cc17af8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "be5a32b6-4cdb-4c30-b8d1-23014dc2e070",
+    "name": "Логин с неверным паролем",
+    "commands": [{
+      "id": "e9264c47-a29f-4031-b0f3-6bd463708ef7",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecobar.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "700fc74d-e2ec-4be0-9175-b15e28ce5fdf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c0000b1-e3da-4b46-98b9-f5ec0c6b9e8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions:nth-child(3) .actions-list-item:nth-child(2) svg",
+      "targets": [
+        ["css=.header-actions:nth-child(3) .actions-list-item:nth-child(2) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae7bd951-084c-4eac-a2de-edf33115c673",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Вход по паролю')]",
+      "targets": [
+        ["css=.loginOption:nth-child(2) > .login-option-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вход по паролю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0266dd69-0171-4425-b88a-33ede9eb531c",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd124eed-f732-4ca8-a60e-ed051a2a2906",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Eleven11@demo.gorgon"
+    }, {
+      "id": "81c646fc-32c7-4f03-a20d-7e3125c16a8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b04dc47a-d40d-4f9d-8d0d-b13609af4320",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Asdfg12345"
+    }, {
+      "id": "d347c05d-a9fa-46b4-8e8d-9ac4b1a853ed",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Войти')]",
+      "targets": [
+        ["css=.send-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cef6ecda-b04f-456a-acf8-9b7181693909",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.warning",
+      "targets": [
+        ["css=.warning", "css:finder"],
+        ["xpath=//div[@id='login_form']/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Неправильно заполнены поля E-Mail и/или пароль!"
+    }, {
+      "id": "f1f7da70-0a8c-4a0a-b41e-9d110142661c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c0b0d367-7338-4708-9914-95f749e4456e",
+    "name": "Поиск товара",
+    "commands": [{
+      "id": "5bcfe0fb-ace9-40de-bf2d-8aa63e8b77b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecobar.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2803a11-662c-438d-96fd-8444fe0b40ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67b1af0d-ebc8-4f7d-95b7-212081b9ad44",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search_btn > svg",
+      "targets": [
+        ["css=#search_btn > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e7e5321-db6b-4821-ac1e-959db4d5192f",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='multi-form']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "Чай"
+    }, {
+      "id": "e8c2e5e1-b791-42f1-8787-0fba8cbbf152",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.multi-cell:nth-child(1) > .multi-title > span",
+      "targets": [],
+      "value": "Травяные чаи"
+    }, {
+      "id": "cea7c429-0c12-4c67-a173-c17d1f5ee2de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.multi-cell:nth-child(1) > .multi-item:nth-child(2) a > span",
+      "targets": [
+        ["css=.multi-cell:nth-child(1) > .multi-item:nth-child(2) a > span", "css:finder"],
+        ["xpath=//div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Coconut Matcha Latte (саше) Re-feel, 1 шт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "020e4d85-5238-4d98-9793-d61b20dc1f75",
+      "comment": "",
+      "command": "click",
+      "target": "id=main-content",
+      "targets": [
+        ["id=main-content", "id"],
+        ["css=#main-content", "css:finder"],
+        ["xpath=//main[@id='main-content']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4832672c-eb5c-4d02-ab52-e4e32d0ea5bb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-name",
+      "targets": [],
+      "value": "Напиток Re-feel. Coconut Matcha Latte, саше 1 шт"
+    }, {
+      "id": "36c92826-bdb9-4d58-b74c-382fa6b506b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-model",
+      "targets": [
+        ["css=.product-model", "css:finder"],
+        ["xpath=//div[@id='page-product']/div/span", "xpath:idRelative"],
+        ["xpath=//main/div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Код товара: Refl13-01')]", "xpath:innerText"]
+      ],
+      "value": "Код товара: Refl13-01"
+    }, {
+      "id": "c3da7ac4-f99b-4508-a47c-29e446ae0c26",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b219638f-e058-4740-ac6e-a4698c85efeb",
+    "name": "Покупка товара",
+    "commands": [{
+      "id": "31151717-911d-457d-a3dd-435437e5748e",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecobar.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "479452c7-9df1-4abc-9b68-335f3f9988de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a359c176-5003-406e-ad2d-e7668245a215",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_btn",
+      "targets": [
+        ["css=.mobile-search-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba399e67-a2e6-4ee4-92f3-f5c565d7b761",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='multi-form']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "Варенье"
+    }, {
+      "id": "850fc66a-55a1-4a2d-93b3-24667c8d27cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.multi-item:nth-child(3) a > span",
+      "targets": [
+        ["css=.multi-item:nth-child(3) a > span", "css:finder"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Варенье \"со вкусом имбирного пряника\" с апельсином, яблоком и персиком Natures own factory, 210г')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7141521-2978-459c-9ce0-e96605f11323",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mobile-container",
+      "targets": [
+        ["css=.mobile-container", "css:finder"],
+        ["xpath=//main[@id='main-content']/div[2]", "xpath:idRelative"],
+        ["xpath=//main/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13e99d76-9941-446b-b29c-6b4407f1b9c1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product-name",
+      "targets": [
+        ["css=.product-name", "css:finder"],
+        ["xpath=//div[@id='page-product']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Варенье со вкусом имбирного пряника \"Natures own factory\", 210гр')]", "xpath:innerText"]
+      ],
+      "value": "Варенье со вкусом имбирного пряника \"Natures own factory\", 210гр"
+    }, {
+      "id": "be959280-e60f-439d-9ed4-5decd431deb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sticky > .btn",
+      "targets": [
+        ["css=.sticky > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='page-product']/div[2]/div[2]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e49e75f0-de4f-4bb7-aaca-04212064456b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions:nth-child(3) .js-cart-btn > svg",
+      "targets": [
+        ["css=.header-actions:nth-child(3) .js-cart-btn > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "58a94af8-61f0-4322-8498-1180736945e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.make_order",
+      "targets": [
+        ["css=.make_order", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "299d0515-3bd6-43f5-b9d3-89669da89b96",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Вход по паролю')]",
+      "targets": [
+        ["css=.loginOption:nth-child(2) > .login-option-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вход по паролю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d3f4cc7-c7d4-418b-9a99-446d503e39cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a558e47e-2fc5-4f6d-9306-67bc9332c5dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Eleven11@demo.gorgon"
+    }, {
+      "id": "bb6d50c8-8802-48bb-9ce3-e7f34fc9d4f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ae9156-5b1f-4b9f-9a4e-f15faae845a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Qwerty12345"
+    }, {
+      "id": "53a4d1e0-5594-4eec-a9d7-036149f5d3a0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Войти')]",
+      "targets": [
+        ["css=.send-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='login_form']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9181b3f8-0ef3-4ca0-8d1f-aa3392a1b7e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.make_order",
+      "targets": [
+        ["css=.make_order", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a8ef3d-afa2-49b9-a9d9-efb857dc77bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkout-block-new:nth-child(3) .edit-button",
+      "targets": [
+        ["css=.checkout-block-new:nth-child(3) .edit-button", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a52f494-ceff-4bb0-ad46-067f6648cfa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-button:nth-child(5)",
+      "targets": [
+        ["css=.address-button:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='delivery_form']/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "296fad76-f565-4c3c-a1cc-787800d756bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-button:nth-child(1) > span",
+      "targets": [
+        ["css=.address-button:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div/div[2]/div[3]/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Минск, пр-т Дзержинского, 19, ежедневно с 9:00 до 21:00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7789e93-1217-4f77-9fb0-ea0e2c9ec19a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.payment-data-block .edit-button",
+      "targets": [
+        ["css=.payment-data-block .edit-button", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div[3]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09ae1d9d-3b82-43e3-a5ea-0003b50cb41d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.delivery-option-button:nth-child(3)",
+      "targets": [
+        ["css=.delivery-option-button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='payment_form']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8e5b10c-6578-413a-96d1-ec5ec27c12c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.delivery-data-block > .checkout-block-new:nth-child(2) .block-title:nth-child(1)",
+      "targets": [
+        ["css=.delivery-data-block > .checkout-block-new:nth-child(2) .block-title:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "Получатель"
+    }, {
+      "id": "1ac4f214-73ba-4342-87ca-0ad7f80e52d9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.block-title:nth-child(3)",
+      "targets": [
+        ["css=.block-title:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div/div/div/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": "Stranger +345678901234"
+    }, {
+      "id": "9222de9d-1293-44e2-824b-f544124c6c1f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.checkout-block-new:nth-child(3) .block-title:nth-child(1)",
+      "targets": [
+        ["css=.checkout-block-new:nth-child(3) .block-title:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div/div[2]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/span", "xpath:position"]
+      ],
+      "value": "Самовывоз:"
+    }, {
+      "id": "99f1cdd4-f97d-4fbb-931c-44377b2a64ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/span/span[2]",
+      "targets": [
+        ["css=.checkout-block-new:nth-child(3) .block-title:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div/div[2]/div/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": "Минск, пр-т Дзержинского, 19, ежедневно с 9:00 до 21:00"
+    }, {
+      "id": "120e1ae7-d133-4df0-9ec3-bf40d058716b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.payment-data-block > .checkout-block-title",
+      "targets": [
+        ["css=.payment-data-block > .checkout-block-title", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//div[3]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Оплата')]", "xpath:innerText"]
+      ],
+      "value": "Оплата"
+    }, {
+      "id": "2074ed69-2b54-4ee2-ae75-5955ad872180",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.payment-data-block .block-title",
+      "targets": [
+        ["css=.payment-data-block .block-title", "css:finder"],
+        ["xpath=//div[@id='content']/main/div/div/div[2]/div[3]/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span/span", "xpath:position"]
+      ],
+      "value": "ЕРИП"
+    }]
+  }],
+  "suites": [{
+    "id": "ca2b7815-5904-45d3-8709-e7a7a34604f0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7a5e62ae-0f47-403a-bbd8-cc85f6e98f41"]
+  }],
+  "urls": ["https://ecobar.by/"],
+  "plugins": []
+}
